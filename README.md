@@ -23,6 +23,10 @@ Laravel環境構築
  ・Laravel 10.0
  ・MySQL 8.0
 
+ER図
+![image](https://github.com/user-attachments/assets/6593b035-d950-4649-8333-f2a4b43d42f0)
+
+
 URL
 
  ・開発環境:http://localhost/
