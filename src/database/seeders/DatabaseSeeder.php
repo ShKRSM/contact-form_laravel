@@ -1,27 +1,16 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Seeders;
 
-use App\Models\Contact;
-use App\Models\Category;
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Seeder;
 
-class ContactFactory extends Factory
+class DatabaseSeeder extends Seeder
 {
-    protected $model = Contact::class;
-
-    public function definition()
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
     {
-        return [
-            'category_id' => Category::inRandomOrder()->first()->id ?? 1,
-            'first_name' => $this->faker->firstName,
-            'last_name' => $this->faker->lastName,
-            'gender' => $this->faker->numberBetween(1, 3),
-            'email' => $this->faker->unique()->safeEmail,
-            'tel' => $this->faker->numerify('0####'),
-            'address' => $this->faker->address,
-            'building' => $this->faker->optional()->secondaryAddress,
-            'detail' => $this->faker->realText(50),
-        ];
+        // \App\Models\User::factory(10)->create();
     }
 }
