@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Category;
+use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
 {
@@ -16,8 +16,13 @@ class CategorySeeder extends Seeder
             ['content' => 'ショップへのお問い合わせ'],
             ['content' => 'その他'],
         ];
+
         foreach ($categories as $category) {
-            Category::create($category);
+            DB::table('categories')->insert([
+                'content' => $category['content'],
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
         }
     }
 }
