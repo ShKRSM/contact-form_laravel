@@ -366,97 +366,100 @@ body {
     font-weight: bold;
     margin: 30px 0 30px 0;
 }
-.admin-search-block {
-    margin: 32px auto 0 auto;
-    max-width: 900px;
-    background: none;
-    padding: 0;
+.admin-search-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 .admin-search-form {
     display: flex;
-    gap: 12px;
-    align-items: center;
-    margin-bottom: 16px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .admin-input, .admin-select {
-    border: 1px solid #e0d8d0;
+    border: 1px solid #e5ded7;
     border-radius: 4px;
-    background: #f8f6f4;
-    padding: 10px 16px;
+    padding: 8px 12px;
+    background: #fff;
+    color: #7c6b57;
     font-size: 1rem;
-    color: #a89c91;
+    min-width: 180px;
+}
+.admin-date {
     min-width: 140px;
 }
 .admin-btn {
-    border: none;
     border-radius: 4px;
-    background: #bfa88a;
-    color: #fff;
-    padding: 10px 24px;
+    border: none;
     font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 8px 24px;
+    margin-left: 5px;
     cursor: pointer;
-    margin-right: 8px;
     transition: background 0.2s;
 }
-.admin-btn.admin-btn-reset {
-    background: #ede5dd;
-    color: #bfa88a;
-    border: none;
-}
-.admin-btn.admin-btn-export {
-    background: #ede5dd;
-    color: #bfa88a;
-    border: none;
-    margin-right: 0;
-}
-.admin-btn-detail {
-    border: 1px solid #bfa88a;
-    background: #fff;
-    color: #bfa88a;
-    border-radius: 4px;
-    padding: 6px 18px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-}
-.admin-btn-detail:hover {
-    background: #bfa88a;
+.admin-btn-search {
+    background: #b29b7e;
     color: #fff;
 }
+.admin-btn-reset {
+    background: #e5ded7;
+    color: #b29b7e;
+}
+.admin-btn-export {
+    background: #e5ded7;
+    color: #b29b7e;
+}
+.admin-btn-search:hover, .admin-btn-reset:hover, .admin-btn-export:hover {
+    opacity: 0.85;
+}
 .admin-table-area {
-    margin: 32px auto 0 auto;
-    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .admin-table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
+    max-width: 950px;
+    border-collapse: collapse;
     background: #fff;
-    font-size: 1.05rem;
-    box-shadow: 0 0 8px #e0d8d0;
-    border-radius: 8px;
-    overflow: hidden;
+    margin-bottom: 20px;
 }
 .admin-table th {
-    background: #bfa88a;
+    background: #b29b7e;
     color: #fff;
     font-weight: bold;
-    padding: 16px 12px;
-    text-align: left;
-    border-bottom: 1px solid #e0d8d0;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    text-align: center;
+    border: none;
 }
 .admin-table td {
-    padding: 16px 12px;
-    border-bottom: 1px solid #f3ece6;
-    color: #a89c91;
+    border-top: 1px solid #e5ded7;
+    text-align: center;
+    padding: 14px 0;
+    color: #7c6b57;
+    font-size: 1.05rem;
+    background: #fff;
 }
-.admin-table tr:last-child td {
-    border-bottom: none;
+.admin-btn-detail {
+    border: 1px solid #e5ded7;
+    background: #fff;
+    color: #b29b7e;
+    border-radius: 4px;
+    padding: 6px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.admin-btn-detail:hover {
+    background: #f5f3f1;
 }
 .admin-pagination {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
+    margin-bottom: 40px;
 }
 .admin-pagination .pagination {
     display: flex;
@@ -466,23 +469,19 @@ body {
     list-style: none;
 }
 .admin-pagination .page-link {
-    border: 1px solid #bfa88a;
+    border: 1px solid #e5ded7;
     background: #fff;
-    color: #bfa88a;
+    color: #b29b7e;
     border-radius: 4px;
     padding: 6px 14px;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
     text-decoration: none;
+    margin: 0 2px;
 }
-.admin-pagination .active .page-link,
-.admin-pagination .page-link:hover {
-    background: #bfa88a;
+.admin-pagination .active .page-link {
+    background: #b29b7e;
     color: #fff;
-}
-.admin-export-area {
-    margin-bottom: 8px;
+    border-color: #b29b7e;
 }
 .admin-modal-bg {
     position: fixed;
