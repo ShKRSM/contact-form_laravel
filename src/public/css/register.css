@@ -1,0 +1,51 @@
+/* public/css/register.css */
+
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    font-family: "Georgia", serif;
+}
+
+.register-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5c4e3f;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.btn-register {
+    background-color: #7a6a58;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 0.85rem;
+}

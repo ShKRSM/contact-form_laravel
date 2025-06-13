@@ -1,0 +1,550 @@
+body {
+    background: #fff;
+    margin: 0;
+    font-family: 'Yu Gothic', 'Meiryo', sans-serif;
+}
+
+/* ヘッダー */
+.header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 40px 0 40px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.site-title {
+    font-size: 2.2rem;
+    color: #a89c91;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+    text-align: center;
+    flex: 1;
+}
+.header-link-btn {
+    position: absolute;
+    right: 40px;
+    top: 28px;
+    border: 1px solid #d6cfc7;
+    background: #f3ece6;
+    color: #b7a99a;
+    padding: 4px 16px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+/* ページタイトル（ボックス外） */
+.contact-title, .admin-title {
+    color: #a89c91;
+    font-size: 2rem;
+    margin: 40px 0 32px 0;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+/*　登録画面用　*/
+.register-bg {
+    background: #f3ece6;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+}
+.register-title {
+    color: #a89c91;
+    font-size: 2rem;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+.register-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #e0d8d0;
+    padding: 48px 40px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 32px;
+}
+label {
+    display: block;
+    color: #a89c91;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #f8f6f4;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #a89c91;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #d6cfc7;
+    font-size: 0.95rem;
+}
+.register-btn {
+    width: 100%;
+    background: #a89c91;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s;
+}
+.register-btn:hover {
+    background: #8d837a;
+}
+.error-message {
+    color: #d9534f;
+    font-size: 0.95rem;
+    margin-top: 6px;
+    display: block;
+}
+
+/*　ログイン画面用　*/
+.login-bg {
+    background: #f3ece6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #e0d8d0;
+    padding: 48px 40px;
+    width: 400px;
+    margin: 40px auto;
+}
+.login-title {
+    text-align: center;
+    color: #a89c91;
+    font-size: 2rem;
+    margin-bottom: 32px;
+    font-family: 'Georgia', serif;
+}
+.form-group {
+    margin-bottom: 32px;
+}
+label {
+    display: block;
+    color: #a89c91;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #f8f6f4;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #a89c91;
+}
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #d6cfc7;
+    font-size: 0.95rem;
+}
+.login-btn {
+    width: 100%;
+    background: #a89c91;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s;
+}
+.login-btn:hover {
+    background: #8d837a;
+}
+.error-message {
+    color: #d9534f;
+    font-size: 0.95rem;
+    margin-top: 6px;
+    display: block;
+}
+
+/*　お問い合わせ画面用　*/
+.contact-page {
+    width: 100%;
+    text-align: center;
+}
+.contact-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #e0d8d0;
+    padding: 48px 40px;
+    width: 700px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+}
+.contact-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 18px;
+    margin-bottom: 32px;
+}
+.contact-table th {
+    text-align: left;
+    color: #a89c91;
+    font-size: 1.1rem;
+    font-weight: normal;
+    width: 180px;
+    vertical-align: top;
+    padding-top: 8px;
+}
+.contact-table td {
+    padding: 0;
+}
+.required {
+    color: #d9534f;
+    font-size: 1rem;
+    margin-left: 2px;
+}
+.name-row {
+    display: flex;
+    gap: 12px;
+}
+.name-row input[type="text"] {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background: #f8f6f4;
+    font-size: 1rem;
+    color: #a89c91;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #d6cfc7;
+    font-size: 0.95rem;
+}
+.radio-group {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #a89c91;
+    margin-right: 10px;
+}
+.radio-group input[type="radio"] {
+    accent-color: #a89c91;
+    margin-right: 6px;
+}
+input[type="email"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background: #f8f6f4;
+    font-size: 1rem;
+    color: #a89c91;
+    margin-bottom: 0;
+}
+.tel-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.tel-row input[type="text"] {
+    width: 80px;
+    text-align: center;
+}
+.tel-hyphen {
+    color: #a89c91;
+    font-size: 1.2rem;
+}
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+select {
+    appearance: none;
+    background: #f8f6f4 url("data:image/svg+xml,%3Csvg width='16' height='16' fill='gray' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E") no-repeat right 12px center/16px 16px;
+}
+.contact-btn-row {
+    text-align: center;
+}
+.contact-btn {
+    width: 200px;
+    background: #a89c91;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s;
+}
+.contact-btn:hover {
+    background: #8d837a;
+}
+.error-message {
+    color: #d9534f;
+    font-size: 0.95rem;
+    margin-top: 6px;
+    display: block;
+}
+
+/*　管理画面用　*/
+body {
+    background: #f5f3f1;
+    font-family: 'Yu Mincho', '游明朝', serif;
+    color: #7c6b57;
+}
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 0 0;
+    border-bottom: 1px solid #e5ded7;
+    padding-bottom: 10px;
+}
+.admin-logo {
+    font-size: 2.6rem;
+    color: #b29b7e;
+    font-family: 'Yu Mincho', '游明朝', serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.logout-form {
+    margin-right: 10px;
+}
+.logout-btn {
+    background: none;
+    border: 1px solid #e5ded7;
+    color: #b29b7e;
+    border-radius: 4px;
+    padding: 4px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.logout-btn:hover {
+    background: #f5f3f1;
+}
+.admin-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #b29b7e;
+    font-family: 'Yu Mincho', '游明朝', serif;
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+}
+.admin-search-block {
+    margin: 32px auto 0 auto;
+    max-width: 900px;
+    background: none;
+    padding: 0;
+}
+.admin-search-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.admin-input, .admin-select {
+    border: 1px solid #e0d8d0;
+    border-radius: 4px;
+    background: #f8f6f4;
+    padding: 10px 16px;
+    font-size: 1rem;
+    color: #a89c91;
+    min-width: 140px;
+}
+.admin-btn {
+    border: none;
+    border-radius: 4px;
+    background: #bfa88a;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background 0.2s;
+}
+.admin-btn.admin-btn-reset {
+    background: #ede5dd;
+    color: #bfa88a;
+    border: none;
+}
+.admin-btn.admin-btn-export {
+    background: #ede5dd;
+    color: #bfa88a;
+    border: none;
+    margin-right: 0;
+}
+.admin-btn-detail {
+    border: 1px solid #bfa88a;
+    background: #fff;
+    color: #bfa88a;
+    border-radius: 4px;
+    padding: 6px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.admin-btn-detail:hover {
+    background: #bfa88a;
+    color: #fff;
+}
+.admin-table-area {
+    margin: 32px auto 0 auto;
+    max-width: 900px;
+}
+.admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    font-size: 1.05rem;
+    box-shadow: 0 0 8px #e0d8d0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.admin-table th {
+    background: #bfa88a;
+    color: #fff;
+    font-weight: bold;
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0d8d0;
+}
+.admin-table td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #f3ece6;
+    color: #a89c91;
+}
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+.admin-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+.admin-pagination .pagination {
+    display: flex;
+    gap: 4px;
+}
+.admin-pagination .page-item {
+    list-style: none;
+}
+.admin-pagination .page-link {
+    border: 1px solid #bfa88a;
+    background: #fff;
+    color: #bfa88a;
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+.admin-pagination .active .page-link,
+.admin-pagination .page-link:hover {
+    background: #bfa88a;
+    color: #fff;
+}
+.admin-export-area {
+    margin-bottom: 8px;
+}
+.admin-modal-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(178,155,126,0.15);
+    z-index: 1000;
+}
+.admin-modal {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 2px solid #b29b7e;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90vw;
+    z-index: 1001;
+    padding: 40px 40px 30px 40px;
+    box-shadow: 0 4px 24px rgba(178,155,126,0.12);
+}
+.admin-modal-close {
+    position: absolute;
+    top: 18px; right: 24px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #b29b7e;
+    cursor: pointer;
+}
+.admin-modal-content {
+    margin-top: 20px;
+}
+@media (max-width: 700px) {
+    .admin-modal { width: 98vw; padding: 10px; }
+    .admin-table { font-size: 0.95rem; }
+}
+
+/*　サンクスページ用　*/
+.thanks-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+.thanks-container h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+.thanks-container p {
+    color: #a89c91;
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+.thanks-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a89c91;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+.thanks-container a:hover {
+    background-color: #8d837a;
+}

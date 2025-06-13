@@ -1,0 +1,59 @@
+.admin-search-block {
+    margin: 30px 0 0 0;
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.admin-search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+}
+.admin-input {
+    width: 110px;
+    min-width: 80px;
+    max-width: 120px;
+    height: 28px;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+.admin-select {
+    width: 65px;
+    min-width: 60px;
+    max-width: 70px;
+    height: 28px;
+    font-size: 12px;
+    padding-right: 14px;
+}
+.admin-date {
+    width: 80px;
+    min-width: 70px;
+    max-width: 90px;
+    height: 28px;
+    font-size: 12px;
+}
+.admin-btn {
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 2px 8px;
+    height: 28px;
+    min-width: 48px;
+    max-width: 60px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-sizing: border-box;
+}
+.admin-btn-export {
+    width: 70px;
+    height: 28px;
+    font-size: 12px;
+    padding: 2px 10px;
+}
